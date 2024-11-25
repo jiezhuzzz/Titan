@@ -40,7 +40,7 @@ export LIBS="$LIBS -l:driver.o -lstdc++"
 		pushd $TARGET/repo
 	fi
 
-	echo "targets"
+	echo -e "\033[32mTargets\033[0m"
 	grep -nr MAGMA_LOG | cut -f1,2 -d':' | grep -v ".orig:"  | grep -v "Binary file" > $OUT/cstest.txt
 
 	cat $OUT/cstest.txt
