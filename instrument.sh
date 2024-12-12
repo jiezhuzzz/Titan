@@ -41,7 +41,7 @@ export LIBS="$LIBS -l:driver.o -lstdc++"
 	fi
 
 	echo "targets"
-	grep -nr MAGMA_LOG | cut -f1,2 -d':' | grep -v ".orig:"  | grep -v "Binary file" > $OUT/cstest.txt
+	grep -nr MAGMA_RECORD | cut -f1,2 -d':' | grep -v ".orig:"  | grep -v "Binary file" > $OUT/cstest.txt
 
 	cat $OUT/cstest.txt
 )
